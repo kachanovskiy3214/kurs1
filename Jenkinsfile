@@ -8,13 +8,13 @@ pipeline {
         DOCKER_TAG = "final" // Docker image tag
     }
 
-    stages {
-        stage('Restart Docker') {
-            steps {
-                // Restart Docker server
-                sh 'sudo systemctl restart docker'
-            }
-        }
+    // stages {
+    //     stage('Restart Docker') {
+    //         steps {
+    //             // Restart Docker server
+    //             sh 'sudo systemctl restart docker'
+    //         }
+    //     }
         stage('Clone repository') {
             steps {
                 // Clone GitHub repository
